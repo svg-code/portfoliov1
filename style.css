@@ -76,12 +76,3 @@ h2:after {
   width: 1450px;
   margin: 5px 20px 0 0; 
 }
-
-@media only screen and (max-width: 768px) {
-  .wrapper {
-    width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-  }
-}
