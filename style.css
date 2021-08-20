@@ -13,7 +13,8 @@ body {
 }
 
 .wrapper {
-  margin-left: 40px;
+  width: 80%;
+  margin-left: 10%;
 }
 
 h1 {
@@ -22,7 +23,7 @@ h1 {
 }
 
 .heading {
-  width: 1000px;
+  width: 50%;
   margin: 30px auto;
   text-align: center;
 }
@@ -42,16 +43,28 @@ h2:after {
   height: 2px;
   background-color: #000;
   content: " ";
-  width: 1500px;
+  width: 100%;
   margin: 5px 20px 0 0; 
+}
+
+.work-experience {
+  width: 80%;
 }
 
 .work-experience ul {
   margin-bottom: 15px;
 }
 
+.wrapper .summary {
+  width: 80%;
+}
+
 .long-copy {
-  width: 1500px;
+  width: 100%;
+}
+
+.skills {
+  width: 80%;
 }
 
 .skillss {
@@ -64,15 +77,24 @@ h2:after {
   margin-left: 30px;
 }
 
+.education {
+  width: 80%;
+}
+
 .date {
   float: right;
   margin-right: 45px;
 }
-.line:after {
-  display: block;
-  height: 2px;
-  background-color: #000;
-  content: " ";
-  width: 1450px;
-  margin: 5px 20px 0 0; 
+
+@media only screen and (max-width: 600px) {
+  .skillss {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .skillss {
+    grid-template-columns: 1fr;
+  }
 }
